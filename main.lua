@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------- *
 -- About:
 --
--- MC6 is a Roblox exploitation gui created by @justiceplatformunion.
+-- MC6 is a Roblox exploitation gui created by @kernelcore32 & @justiceplatformunion.
 
 
 -- Contributing:
