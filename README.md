@@ -11,5 +11,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/kernelcore32/MC6/main
 
 ## License
 MC6 is licensed under the protection of the MIT License.
-Copyright (c) 2023 kernelcore32
+Copyright (c) 2023 kernelcore32,
 Read [OSI : MIT](https://opensource.org/license/mit/) for more information.
+
+## Donate
+You can donate via GitHub sponsors at: https://github.com/sponsors/TuberAsk
