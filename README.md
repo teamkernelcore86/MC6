@@ -8,3 +8,8 @@ First you'll have to get an executor. There are some recommended executors like 
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/kernelcore32/MC6/main/main.lua"))()
 ```
+
+## License
+MC6 is licensed under the protection of the MIT License.
+Copyright (c) 2023 kernelcore32
+Read [OSI : MIT](https://opensource.org/license/mit/) for more information.
