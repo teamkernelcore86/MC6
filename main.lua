@@ -119,23 +119,22 @@ skybx.BackgroundTransparency = 0.5
 skybx.Position = UDim2.new(0.033, 0, 0.206, 0)
 skybx.Size = UDim2.new(0, 279, 0, 45)
 
-local isSkyboxCreated = false
+local skybox = nil
 
 skybx.MouseButton1Click:Connect(function()
 	local ChngdId = chngsyid.Text
-	
-	if isSkyboxCreated == true then
-		return
+
+	if skybox then
+		skybox:Destroy()
 	end
-	
-	local skybox = Instance.new("Sky", game.Lighting)
+
+	skybox = Instance.new("Sky", game.Lighting)
 	skybox.SkyboxFt = ChngdId
 	skybox.SkyboxBk = ChngdId
 	skybox.SkyboxDn = ChngdId
 	skybox.SkyboxUp = ChngdId
 	skybox.SkyboxLf = ChngdId
 	skybox.SkyboxRt = ChngdId
-	isSkyboxCreated = true
 end)
 
 local unancr = Instance.new("TextButton", frame)
