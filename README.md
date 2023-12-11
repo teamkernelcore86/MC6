@@ -9,6 +9,9 @@ First you'll have to get an executor. There are some recommended executors like 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/kernelcore32/MC6/main/main.lua"))()
 ```
 
+## Usage
+[![MC6 showcase image](https://cdn.discordapp.com/attachments/1179375927080267877/1183735924127965224/mc6showcase.png?ex=65896afd&is=6576f5fd&hm=0d74be9ceedaafb4dd1e7b724162ef69a62a0c0220fc22d93ddfddee9ea317a0&)]
+
 ## License
 MC6 is licensed under the protection of the MIT License.
 Copyright (c) 2023 kernelcore32,
