@@ -18,4 +18,4 @@ Copyright (c) 2023 kernelcore32,
 Read [OSI : MIT](https://opensource.org/license/mit/) for more information.
 
 ## Donate
-You can donate via GitHub sponsors at: https://github.com/sponsors/TuberAsk
+You can donate via GitHub sponsors or Patreon at: https://github.com/sponsors/TuberAsk, https://patreon.com/kernelcore32
