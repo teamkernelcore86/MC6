@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------- *
 -- About:
 --
--- MC6 is a Roblox exploitation gui created by @kernelcore32 & @justiceplatformunion.
+-- MC6 is a Roblox exploitation gui created by @justiceplatformunion.
 
 
 -- Contributing:
@@ -94,7 +94,7 @@ banner.Size = UDim2.new(0, 300, 0, 29)
 local title = Instance.new("TextLabel", banner)
 title.Name = "Title"
 title.BackgroundTransparency = 1
-title.Text = "MC6 v1.0"
+title.Text = "MC6 v2.0"
 title.Font = Enum.Font.Code
 title.TextSize = 25
 title.Position = UDim2.new(0, 0, 0, 0)
@@ -159,22 +159,22 @@ unancr.MouseButton1Click:Connect(function()
 	end
 end)
 
-local humdel = Instance.new("TextButton", frame)
-humdel.Text = "Delete All Humanoids"
-humdel.TextSize = 20
-humdel.Font = Enum.Font.Code
-humdel.BackgroundColor3 = Color3.new(1, 1, 1)
-humdel.BackgroundTransparency = 0.5
-humdel.Position = UDim2.new(0.033, 0, 0.57, 0 )
-humdel.Size = UDim2.new(0, 279, 0, 45)
+--local humdel = Instance.new("TextButton", frame)
+--humdel.Text = "Delete All Humanoids"
+--humdel.TextSize = 20
+--humdel.Font = Enum.Font.Code
+--humdel.BackgroundColor3 = Color3.new(1, 1, 1)
+--humdel.BackgroundTransparency = 0.5
+--humdel.Position = UDim2.new(0.033, 0, 0.57, 0)
+--humdel.Size = UDim2.new(0, 279, 0, 45)
 
-humdel.MouseButton1Click:Connect(function()
-	for _, humanoid in pairs(workspace:GetDescendants()) do
-		if humanoid:IsA("Humanoid") then
-			humanoid:Destroy()
-		end
-	end
-end)
+--humdel.MouseButton1Click:Connect(function()
+--	for _, humanoid in pairs(workspace:GetDescendants()) do
+--		if humanoid:IsA("Humanoid") then
+--			humanoid:Destroy()
+--		end
+--	end
+--end)
 
 local tlt = Instance.new("TextButton", frame)
 tlt.Text = "Tilt Baseplate"
@@ -209,8 +209,39 @@ tlt.MouseButton1Click:Connect(function()
 	end)
 end)
 
---local button4 = Instance.new("TextButton", frame) - v2.0
---button4.Name = "Empty" - v2.0
+local chngsdid = Instance.new("TextBox", frame)
+chngsdid.Text = ""
+chngsdid.PlaceholderText = "Change Sound Asset Id"
+chngsdid.Font = Enum.Font.Code
+chngsdid.TextSize = 20
+chngsdid.BackgroundColor3 = Color3.new(1, 1, 1)
+chngsdid.BackgroundTransparency = 0.5
+chngsdid.Position = UDim2.new(0.033, 0, 0.690, 0)
+chngsdid.Size = UDim2.new(0, 279, 0, 45)
+
+local button4 = Instance.new("TextButton", frame)
+button4.Text = "Play Sound"
+button4.BackgroundColor3 = Color3.new(1, 1, 1)
+button4.BackgroundTransparency = 0.5
+button4.Font = Enum.Font.Code
+button4.TextSize = 20
+button4.Position = UDim2.new(0.033, 0, 0.57, 0)
+button4.Size = UDim2.new(0, 279, 0, 45)
+
+local sound = nil
+
+button4.MouseButton1Click:Connect(function()
+	local chngsound = chngsdid.Text
+	
+	if sound then
+		sound:Destroy()
+	end
+	
+	sound = Instance.new("Sound", workspace)
+	sound.SoundId = chngsound
+	
+	sound:Play()
+end)
 
 local theme = Instance.new("TextButton", frame)
 theme.Name = "Theme"
@@ -260,6 +291,7 @@ theme.MouseButton1Click:Connect(function()
 		blackt.MouseButton1Click:Connect(function()
 			frame.BackgroundColor3 = Color3.new(0, 0, 0)
 			banner.BackgroundColor3 = Color3.new(0, 0, 0)
+			title.TextColor = BrickColor.new("White")
 		end)
 		
 		local redt = Instance.new("TextButton", color3menu)
@@ -290,6 +322,7 @@ theme.MouseButton1Click:Connect(function()
 		whitet.MouseButton1Click:Connect(function()
 			frame.BackgroundColor3 = Color3.new(1, 1, 1)
 			banner.BackgroundColor3 = Color3.new(1, 1, 1)
+			title.TextColor = BrickColor.new("Really black")
 		end)
 		
 		local bluet = Instance.new("TextButton", color3menu)
